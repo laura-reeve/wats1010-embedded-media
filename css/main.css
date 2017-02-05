@@ -5,6 +5,240 @@
  * Site Styles
  *****************************************************************************/
 
- html {
-     color: green;
- }
+/*GLOBAL STYLES*/
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(23,204,203);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 6em;
+  line-height: 1em;
+}
+
+h2 {
+  text-transform: uppercase;
+  line-height: 3em;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*HEADER*/
+
+header {
+  background-image: url("../img/monkaa_monkeyhang.jpg");
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* header h1, header p and header ul.main-nav are fixed positions, wasn't sure how to align right and keep responsive...*/
+
+header h1 {
+  margin-left: 600px;
+  width: 500px;
+  margin-top: 20px;
+  padding-top: 80px;
+  text-align: left;
+  line-height: 0;
+}
+
+header p {
+  margin-left: 600px;
+  width: 500px;
+  text-align: left;
+  line-height: 0;
+  padding-left: 5px;
+}
+
+header nav ul.main-nav {
+  margin-left: 800px;
+  margin-right: 200px;
+}
+
+
+/*MAIN-NAV changes both header and footer nav bars*/
+
+nav ul.main-nav {
+  background-color: black;
+  padding: 10px 10px 10px 20px;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+nav ul.main-nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul.main-nav a:hover {
+  color: rgb(204,29,159);
+}
+
+/*SOCIAL MEDIA FIXED SIDEBAR*/
+
+#social {
+  position: fixed;
+  background-color: rgb(204,29,159);
+  top: 50px;
+  right: 0;
+  padding: 15px;
+  width: 50px;
+}
+
+#social h2 {
+  text-align: left;
+  font-size: small;
+  line-height: 1em;
+}
+
+/* hover transition width for funsies */
+
+#social:hover {
+  width: 75px;
+  transition: 2s width;
+}
+
+#social a:hover {
+  color: black;
+}
+
+/*EMBEDDED VIDEO*/
+
+/* video embed is exactly half size of original video */
+
+video {
+  height: 303px;
+  width: 538px;
+  display: block;
+  margin: auto;
+}
+
+section#watch {
+  max-width: 1200px; /* for margin: auto; align center */
+  margin: 30px auto;
+}
+
+#watch a {
+  background-color: rgb(204,29,159);
+  padding: 10px;
+  border-radius: 10px;
+  position: relative; 
+  top: 20px;
+}
+
+/* used paddding to move download buttons down, otherwise they overlap p */
+
+#watch p {
+  padding-bottom: 50px;
+}
+
+#watch a:hover {
+  color: black;
+}
+
+/*EMBEDDED AUDIO*/
+
+audio {
+  display: block;
+  margin: auto;
+}
+
+section#listen {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+#listen a {
+  background-color: rgb(204,29,159);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#listen a:hover {
+  color: black;
+}
+
+/*ABOUT SECTION*/
+
+/*moved p.lead up to just below header section in HTML */
+
+section#about h2, p.lead {
+  background-color: black;
+}
+
+section#about h2 {
+  margin-bottom: 0;
+  color: white;
+}
+
+p.lead {
+  padding: 20px;
+}
+
+/* headshot boxes */
+
+ul.weybec-people li {
+  float: right;
+  margin-right: 10px;
+  border: 2px solid rgb(204,29,159);
+  text-align: center;
+  padding: 5px;
+  background-color: white;
+  color: black;
+}
+
+img.headshot {
+  height: 100px;
+  width: 100px;
+}
+
+/* wrapped text box */
+
+section#about p, footer p {
+  width: 875px;
+}
+
+/* re-established link underline and hover pink */
+
+section#about a {
+  text-decoration: underline;
+}
+
+section#about a:hover {
+  color: rgb(204,29,159);
+}
+
+/*FOOTER*/
+
+footer p a {
+  text-decoration: underline;
+}
+
+footer p a:hover {
+  color: rgb(204,29,159);
+}
